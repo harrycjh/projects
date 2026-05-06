@@ -21,4 +21,4 @@ jobs:
           # 格式: git@gitee.com:用户名/仓库名.git
           destination-repository: "harrycjh/projects"
           # Gitee 仓库地址（先用占位符，用户创建Gitee后填入）
-          destination-git-url: "git@gitee.com:harrycjh/projects.git"
+          destination-git-url: "git@gitee.com:harrycjh/harrycjh-projects.git"
