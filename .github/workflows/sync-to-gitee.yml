@@ -8,13 +8,17 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Push to Gitee
-        uses: wearerequired/git-mirror-action@v1
         env:
-          GITEE_RSA_KEY: ${{ secrets.GITEE_RSA_KEY }}
-          GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
-        with:
-          destination-repo: "harrycjh/harrycjh-projects"
+          GIT_SSH_KEY: ${{ secrets.GITEE_RSA_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$GIT_SSH_KEY" > ~/.ssh/gitee_ed25519
+          chmod 600 ~/.ssh/gitee_ed25519
+          ssh-keyscan -t ed25519 gitee.com >> ~/.ssh/known_hosts 2>/dev/null
+          git remote add gitee git@gitee.com:harrycjh/harrycjh-projects.git
+          git push gitee main
