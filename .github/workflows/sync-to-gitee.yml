@@ -1,0 +1,24 @@
+name: Sync to Gitee
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Push to Gitee
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          # 在 GitHub Settings -> Secrets 添加 GITEE_RSA_KEY（私钥）和 GITEE_USERNAME（Gitee用户名）
+          GITEE_RSA_KEY: ${{ secrets.GITEE_RSA_KEY }}
+          GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
+        with:
+          # 格式: git@gitee.com:用户名/仓库名.git
+          destination-repository: "harrycjh/projects"
+          # Gitee 仓库地址（先用占位符，用户创建Gitee后填入）
+          destination-git-url: "git@gitee.com:harrycjh/projects.git"
