@@ -6,7 +6,7 @@
 
 | 项目 | 描述 | 链接 |
 |------|------|------|
-| [黑白棋](https://harrycjh.github.io/reversi/) | 经典黑白棋游戏 | [开始玩](https://harrycjh.github.io/reversi/) |
+| [黑白棋](https://harrycjh.github.io/reversi.html) | 经典黑白棋游戏 | [开始玩](https://harrycjh.github.io/reversi.html) |
 | [魔力宝贝](https://github.com/harrycjh/magicbaby) | 待定 | 规划中 |
 
 ## 📚 学习项目
