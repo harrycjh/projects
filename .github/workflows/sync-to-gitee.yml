@@ -12,13 +12,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to Gitee
+      - name: Setup SSH
         env:
           GIT_SSH_KEY: ${{ secrets.GITEE_RSA_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$GIT_SSH_KEY" > ~/.ssh/gitee_ed25519
-          chmod 600 ~/.ssh/gitee_ed25519
+          echo "$GIT_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -t ed25519 gitee.com >> ~/.ssh/known_hosts 2>/dev/null
+          ssh -vT git@gitee.com 2>&1 | head -20
+
+      - name: Push to Gitee
+        env:
+          GIT_SSH_KEY: ${{ secrets.GITEE_RSA_KEY }}
+        run: |
           git remote add gitee git@gitee.com:harrycjh/harrycjh-projects.git
-          git push gitee main
+          git push gitee main --force 2>&1
