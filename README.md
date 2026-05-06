@@ -6,21 +6,21 @@
 
 | 项目 | 描述 | 链接 |
 |------|------|------|
-| [黑白棋](https://github.com/harrycjh/reversi) | 经典黑白棋游戏 | [开始玩](https://harrycjh.github.io/reversi.html) |
-| [魔力宝贝](https://github.com/harrycjh/harrycjh.github.io) | 待定 | [开始](https://harrycjh.github.io/) |
+| [黑白棋](https://github.com/harrycjh/reversi) | 经典黑白棋游戏 | [开始](https://harrycjh.github.io/reversi.html) |
+| [魔力宝贝](https://github.com/harrycjh/harrycjh.github.io) | 魔力宝贝游戏 | [开始](https://harrycjh.github.io/) |
 
 ## 📚 学习项目
 
 | 项目 | 描述 | 链接 |
 |------|------|------|
-| [数学](https://github.com/harrycjh/math) | 数学学习资料 | 规划中 |
-| [英语](https://harrycjh.github.io/english/) | 英语学习 - KET词汇 | [开始学习](https://harrycjh.github.io/english/) |
+| [数学](https://github.com/harrycjh/math) | 数学学习资料 | [开始](https://github.com/harrycjh/math) |
+| [英语](https://github.com/harrycjh/english) | KET词汇背单词 | [开始](https://harrycjh.github.io/english/) |
 
 ## 💼 工作项目
 
-| 项目 | 描述 | 状态 |
+| 项目 | 描述 | 链接 |
 |------|------|------|
-| [工作](https://github.com/harrycjh/work) | 工作相关项目 | 规划中 |
+| [工作](https://github.com/harrycjh/work) | 工作相关项目 | [开始](https://github.com/harrycjh/work) |
 
 ---
 
