@@ -8,6 +8,7 @@
 |------|------|------|
 | [黑白棋](https://github.com/harrycjh/reversi) | 经典黑白棋游戏 | [开始](https://harrycjh.github.io/reversi.html) |
 | [魔力宝贝](https://github.com/harrycjh/harrycjh.github.io) | 魔力宝贝游戏 | [开始](https://harrycjh.github.io/) |
+| [幸福一家人](https://github.com/harrycjh/xingfu) | 幸福一家人冒险记 H5 游戏 | [开始](https://xingfu.cw2017.com) |
 
 ## 📚 学习项目
 
